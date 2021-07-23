@@ -1,0 +1,35 @@
+Route Planning:
+
+
+
+/store - Display the shoes collection
+
+	• Get user details from USER (Cart is included in USER)
+	• Get product details from PRODUCT
+
+/store/productid - Display a product
+
+	• Get product details for the particular Product_id from PRODUCT.
+
+/store/productid/addtocart - Add product to cart
+
+	• Add the product details as an object to the Cart array from USER. 
+
+		{ Product_id: 
+		  Quantity:
+		  Size:
+		 } 
+
+/store/productid/order - Place an order
+
+	• Generate an Order_id and store it in ORDER (would be NULL otherwise)
+	• Fetch details from Cart of USER and add it to the Products array in ORDER.
+	• Update (reduced) Quantity of the PRODUCT for every ordered products.
+	• Empty the Cart of USER 
+
+
+/SignUp
+	
+/SignIn
+	
+/LogOut
